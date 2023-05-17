@@ -1,0 +1,6 @@
+FROM itzg/minecraft-server:java8-multiarch
+
+COPY env.rad2 env
+ENV MAX_MEMORY=16G
+
+ENTRYPOINT ["/bin/bash", "-c", "source ./env && /start"]
