@@ -1,5 +1,5 @@
 FROM itzg/minecraft-server:java8-multiarch
 
-COPY env.rad2 env
+COPY env.rlcraft env
 
 ENTRYPOINT ["/bin/bash", "-c", "source ./env && /start"]
